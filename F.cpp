@@ -31,7 +31,7 @@ int dy[] = {0, 0, -1, 1};
 string dir = "LRDU";
 void SADIEM()
 {
-    //f_in("../input.txt"); // f_out("output.txt");
+    // f_in("../input.txt"); // f_out("output.txt");
     std::ios_base::sync_with_stdio(NULL);
     cin.tie(0);
     cout.tie(0);
@@ -58,7 +58,7 @@ void Catch_Kadr_fe_ALOLo()
         for (int j = 0; j < 31; j++)
         {
             ll a = p[r][j] - p[l][j], b = (r - l) - a;
-            ans += (((a % Mod) * (b % Mod) * ((1 << j) % Mod)) % Mod);
+            ans += ((((a % Mod) * (b % Mod) % Mod) * ((1 << j) % Mod)) % Mod);
             ans %= Mod;
         }
         cout << ans << "\n";
