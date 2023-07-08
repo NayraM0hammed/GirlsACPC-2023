@@ -31,7 +31,7 @@ int dy[] = {0, 0, -1, 1};
 string dir = "LRDU";
 void SADIEM()
 {
-    f_in("../input.txt"); // f_out("output.txt");
+    //f_in("../input.txt"); // f_out("output.txt");
     std::ios_base::sync_with_stdio(NULL);
     cin.tie(0);
     cout.tie(0);
